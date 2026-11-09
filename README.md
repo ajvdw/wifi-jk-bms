@@ -1,14 +1,12 @@
 # Wifi adapter for JK BMS
 
-<img src="https://raw.githubusercontent.com/ajvdw/wifi-jk-bms/refs/heads/main/media/wifi-adapter-jkbms.jpeg" height="280">
-
-> Read data from a JK BMS over RS485 and publish it to your local network via WiFi.
-
-## Overview
-
 JK BMS units hold a lot of data: individual cell voltages, temperatures, balancing state, cycle counts and capacity. Normally this is only available through the manufacturer's Bluetooth app or indirectly via an inverter display.
 
 **wifi-jk-bms** talks to the BMS directly over RS485 and exposes the data on your network, which is especially useful when you run multiple BMS units.
+
+<img src="https://raw.githubusercontent.com/ajvdw/wifi-jk-bms/refs/heads/main/media/wifi-adapter-jkbms.jpeg" height="280">
+
+> Read data from a JK BMS over RS485 and publish it to your local network via WiFi.
 
 ## Features
 
@@ -16,6 +14,10 @@ JK BMS units hold a lot of data: individual cell voltages, temperatures, balanci
 - Publishes data over WiFi to Home Assistant (for example).
 - Supports multiple BMS units (up to 16)
 - Support reading of values (no data is sent over modbus - sniffing only)
+
+## Want one?
+
+[Poll](https://github.com/ajvdw/wifi-jk-bms/issues/1)
 
 ## Supported hardware
 
@@ -65,10 +67,6 @@ TODO
 - RS485 module (MAX3485 PCB)
 - Power supply
 - USB Cable
-
-## Want one?
-
-[Poll](https://github.com/ajvdw/wifi-jk-bms/issues/1)
 
 ## Contributing
 
