@@ -13,6 +13,9 @@ JK BMS units hold a lot of data: individual cell voltages, temperatures, balanci
 - Supports multiple BMS units (up to 16)
 - Support reading of values (no data is sent over modbus - sniffing only)
 
+## Build one?
+<img src="https://raw.githubusercontent.com/ajvdw/wifi-jk-bms/refs/heads/main/media/diy-adapter.png" height="280">
+
 ## Want one?
 
 [Poll](https://github.com/ajvdw/wifi-jk-bms/issues/1)
