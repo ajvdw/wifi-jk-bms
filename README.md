@@ -13,7 +13,10 @@ JK BMS units hold a lot of data: individual cell voltages, temperatures, balanci
 - Supports multiple BMS units (up to 16)
 - Support reading of values (no data is sent over modbus - sniffing only)
 
-## Want one?
+## Build one?
+<img src="https://raw.githubusercontent.com/ajvdw/wifi-jk-bms/refs/heads/main/media/diy_adapter.png" height="280">
+
+## Buy one?
 
 [Poll](https://github.com/ajvdw/wifi-jk-bms/issues/1)
 
@@ -48,9 +51,8 @@ It is configured for 2 BMS-es out of the box.
 4. Open Homeassistant, the device should be discovered automatically
 5. Configure you favourite battery card
 
-### Example output
-
-TODO
+### Battery card in HomeAssistant
+<img src="https://raw.githubusercontent.com/ajvdw/wifi-jk-bms/refs/heads/main/media/screenshot_bms.png" height="560">
 
 ## Troubleshooting
 
