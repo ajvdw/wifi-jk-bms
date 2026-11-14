@@ -53,7 +53,7 @@ It is configured for 2 BMS-es out of the box.
 
 ### Example output
 
-TODO
+<img src="https://raw.githubusercontent.com/ajvdw/wifi-jk-bms/refs/heads/main/media/screenshot_bms.png" height="280">
 
 ## Troubleshooting
 
