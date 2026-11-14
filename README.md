@@ -26,12 +26,14 @@ JK BMS units hold a lot of data: individual cell voltages, temperatures, balanci
 |-----------|--------------|-------|
 | BMS | JK-BMS (TODO: model, e.g. JK-PB2A16S20P) | Firmware v14, v15, v19 tested |
 | Microcontroller | ESP32 / ESP8266)  |
-| RS485 transceiver | TODO (e.g. MAX485 / auto-direction module) | 3.3 V compatible |
+| RS485 transceiver | MAX3485 PCB | 3.3 V compatible |
 
 ## Wiring
 
 Provide power through USB-C
 Connect an ethernet cable to one of the RS485 ports on the BMS
+
+<img src="https://raw.githubusercontent.com/ajvdw/wifi-jk-bms/refs/heads/main/media/bms_cable.png" height="280">
 
 ## Installation
 
