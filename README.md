@@ -51,9 +51,8 @@ It is configured for 2 BMS-es out of the box.
 4. Open Homeassistant, the device should be discovered automatically
 5. Configure you favourite battery card
 
-### Example output
-
-<img src="https://raw.githubusercontent.com/ajvdw/wifi-jk-bms/refs/heads/main/media/screenshot_bms.png" height="280">
+### Battery card in HomeAssistant
+<img src="https://raw.githubusercontent.com/ajvdw/wifi-jk-bms/refs/heads/main/media/screenshot_bms.png" height="560">
 
 ## Troubleshooting
 
