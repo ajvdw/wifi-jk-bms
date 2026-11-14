@@ -24,7 +24,7 @@ JK BMS units hold a lot of data: individual cell voltages, temperatures, balanci
 
 | Component | Tested model | Notes |
 |-----------|--------------|-------|
-| BMS | JK-BMS (TODO: model, e.g. JK-PB2A16S20P) | Firmware v14, v15, v19 tested |
+| BMS | JK-BMS e.g. JK-PB2A16S20P | Firmware v14, v15, v19 tested |
 | Microcontroller | ESP32 / ESP8266)  |
 | RS485 transceiver | MAX3485 PCB | 3.3 V compatible |
 
@@ -76,7 +76,7 @@ Issues and pull requests are welcome. If you have a JK BMS model or firmware ver
 
 ## License
 
-TODO (e.g. MIT)
+MIT
 
 ## Acknowledgements
 
