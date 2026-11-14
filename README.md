@@ -16,7 +16,7 @@ JK BMS units hold a lot of data: individual cell voltages, temperatures, balanci
 ## Build one?
 <img src="https://raw.githubusercontent.com/ajvdw/wifi-jk-bms/refs/heads/main/media/diy_adapter.png" height="280">
 
-## Want one?
+## Buy one?
 
 [Poll](https://github.com/ajvdw/wifi-jk-bms/issues/1)
 
