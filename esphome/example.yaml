@@ -72,9 +72,6 @@ jk_rs485_bms:
 sensor:
   - platform: uptime
     id: uptime_sec
-  # +--------------------------------------+
-  # | Uptime sensor                        |
-  # +--------------------------------------+
   - platform: uptime
     name: ${esp_name} Uptime Sensor
     id: uptime_sensor
@@ -241,6 +238,7 @@ sensor:
       device_id: bms_device_0
     temperature_sensor_3:
       name: "temperature sensor 3"
+      device_id: bms_device_0      
     temperature_sensor_4:
       name: "temperature sensor 4"
       device_id: bms_device_0
@@ -326,7 +324,7 @@ sensor:
       name: "battery capacity setting"
       device_id: bms_device_1
 #    heating_current:
-#      name: "heating current"
+#      name: heating current"
 #      device_id: bms_device_1      
     cell_voltage_min:
       name: "cell voltage min"
@@ -570,6 +568,7 @@ text_sensor:
     charge_status:
       name: "bms charging status"
       device_id: bms_device_1
+
       
 binary_sensor:
   - platform: jk_rs485_bms
@@ -600,5 +599,3 @@ binary_sensor:
     status_heating:
       name: "status_heating"
       device_id: bms_device_1
-
-      
