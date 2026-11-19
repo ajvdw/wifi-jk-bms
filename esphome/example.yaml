@@ -10,9 +10,9 @@ esp32:
     type: esp-idf
     advanced:
       flash_chip: generic    
-    
+
 esphome:
-  name: $esp_name
+  name: bmswifi
   friendly_name: BmsWifi
   project:
     name: "ajvdw.esphome-jk-bms"
@@ -20,8 +20,10 @@ esphome:
   devices:
     - id: bms_device_0
       name: $bms0_name
+      relation: child
     - id: bms_device_1
       name: $bms1_name
+      relation: child
 
 api:
 
@@ -40,10 +42,11 @@ wifi:
 
 captive_portal:
   
+    
 external_components:
   source: github://ajvdw/esphome-jk-bms@main
   refresh: 0s
-  components: [jk_rs485_sniffer , jk_rs485_bms]
+#  components: [jk_rs485_sniffer , jk_rs485_bms]
 
 uart: 
   - id: uart_0
@@ -56,8 +59,7 @@ jk_rs485_sniffer:
     protocol_version: "JK02_32S"
     rx_timeout: 500ms
     uart_id: uart_0
-    
-
+  
 jk_rs485_bms:
   - id: bms0
     rs485_address: 0x00
@@ -72,6 +74,9 @@ jk_rs485_bms:
 sensor:
   - platform: uptime
     id: uptime_sec
+  # +--------------------------------------+
+  # | Uptime sensor                        |
+  # +--------------------------------------+
   - platform: uptime
     name: ${esp_name} Uptime Sensor
     id: uptime_sensor
@@ -324,7 +329,7 @@ sensor:
       name: "battery capacity setting"
       device_id: bms_device_1
 #    heating_current:
-#      name: heating current"
+#      name: "heating current"
 #      device_id: bms_device_1      
     cell_voltage_min:
       name: "cell voltage min"
