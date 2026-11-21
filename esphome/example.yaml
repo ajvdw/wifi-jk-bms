@@ -10,9 +10,9 @@ esp32:
     type: esp-idf
     advanced:
       flash_chip: generic    
-    
+
 esphome:
-  name: $esp_name
+  name: bmswifi
   friendly_name: BmsWifi
   project:
     name: "ajvdw.esphome-jk-bms"
@@ -20,8 +20,10 @@ esphome:
   devices:
     - id: bms_device_0
       name: $bms0_name
+      relation: child
     - id: bms_device_1
       name: $bms1_name
+      relation: child
 
 api:
 
@@ -40,10 +42,11 @@ wifi:
 
 captive_portal:
   
+    
 external_components:
   source: github://ajvdw/esphome-jk-bms@main
   refresh: 0s
-  components: [jk_rs485_sniffer , jk_rs485_bms]
+#  components: [jk_rs485_sniffer , jk_rs485_bms]
 
 uart: 
   - id: uart_0
@@ -56,8 +59,7 @@ jk_rs485_sniffer:
     protocol_version: "JK02_32S"
     rx_timeout: 500ms
     uart_id: uart_0
-    
-
+  
 jk_rs485_bms:
   - id: bms0
     rs485_address: 0x00
@@ -241,6 +243,7 @@ sensor:
       device_id: bms_device_0
     temperature_sensor_3:
       name: "temperature sensor 3"
+      device_id: bms_device_0      
     temperature_sensor_4:
       name: "temperature sensor 4"
       device_id: bms_device_0
@@ -559,10 +562,16 @@ text_sensor:
     errors:
       name: "bms errors"
       device_id: bms_device_0
+    charge_status:
+      name: "bms charging status"
+      device_id: bms_device_0
   - platform: jk_rs485_bms
     jk_rs485_bms_id: bms1
     errors:
       name: "bms errors"
+      device_id: bms_device_1
+    charge_status:
+      name: "bms charging status"
       device_id: bms_device_1
 
       
@@ -595,5 +604,3 @@ binary_sensor:
     status_heating:
       name: "status_heating"
       device_id: bms_device_1
-
-      
